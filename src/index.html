@@ -27,7 +27,7 @@
         </div>
         <div class="left__company" data-id="security">
           <img src="img/security.svg" class="taxes" data-id="security" />
-          <p class="left__company-desc" data-id="security" >Security</p>
+          <p class="left__company-desc" data-id="security">Security</p>
         </div>
         <div class="left__company" data-id="exchange">
           <img src="img/exchange.svg" class="taxes" data-id="exchange" />
@@ -35,12 +35,13 @@
         </div>
       </div>
       <div class="center">
-        <h2 class="center__title">Cold water</h2>
-        <p class="center__desc">Payment of cold water supply</p>
+        <h2 class="center__title">Choose Company</h2>
+        <p class="center__desc">Payment of ...</p>
         <p class="center__select-meters">
           <label for="meters">
             <span>Select Meter</span>
             <select id="meters">
+              <option selected="selected">--  Meter list  --</option>
               <option value="DS949321">DS 949321</option>
               <option value="QA522010">QA 522010</option>
               <option value="LK309123">LK 309123</option>
@@ -50,7 +51,7 @@
             </select>
           </label>
         </p>
-        <form class="center__form">
+        <form class="center__form" id="form">
           <div class="form__data">
             <div class="data__wrapper">
               <div class="data__item data__previous">
@@ -79,24 +80,9 @@
           <div class="form__summary">
             <p class="form__summary-title">For payment</p>
             <ul class="form__summary-list">
-              <li class="list__item">
-                <p><span class="list__item-label">DS 949321</span>
-                  <span class="price">$ <b>621</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">QA 522010</span>
-                  <span class="price">$ <b>902</b></span>
-                </p>
-              </li>
-              <li class="list__item">
-                <p><span class="list__item-label">LK 309123</span>
-                  <span class="price">$ <b>173</b></span>
-                </p>
-              </li>
               <li class="list__item list__total">
                 <p><span class="list__item-label">Total</span>
-                  <span class="price">$ <b>1 696</b></span>
+                  <span class="price">$ <b>0</b></span>
                 </p>
               </li>
             </ul>
@@ -115,7 +101,7 @@
           <div class="right__payments-fields">
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input type="checkbox" />
                 <span>Taxes</span>
               </label>
             </p>
@@ -133,7 +119,7 @@
             </p>
             <p class="right__payments-field">
               <label>
-                <input type="checkbox" checked/>
+                <input type="checkbox" />
                 <span>Security</span>
               </label>
             </p>
