@@ -21,6 +21,7 @@ const buttonPay = document.getElementsByTagName('button')[2];
 const ul = document.querySelectorAll('.form__summary-list')[0];
 const forPaymentTitle = document.getElementsByClassName('form__summary-title')[0];
 const checkBoxesRow = document.getElementsByClassName('right__payments-field');
+const transactions = document.querySelectorAll('.transactions__list')[0];
 
 companies.onclick = (event) => {
 
@@ -129,6 +130,8 @@ buttonPay.onclick = (event) => {
 
         if (checkInput.checked) {
             console.log(`ID платежа: ${checkSpan}  оплачено`);
+            setTimeout(() => transactions.insertAdjacentHTML('afterbegin',
+            `<li class="list__item">${checkSpan}: Successful payment</li>`), 1000);
         }
     }
 };
